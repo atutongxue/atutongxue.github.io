@@ -30,13 +30,33 @@ jobs:
         key: ${{ secrets.HB4_KEY }} 
         known_hosts: ${{ secrets.HB4_FINGER }}
         
+
+
+        
+    - name: make _site.tgz
+      run: |
+        cd ${{ github.workspace }} && \
+        tar -zcvf _site.tgz _site  
+        
     - name: rsync
       run: |
         rsync -ah --info=progress2 \
         ${{ github.workspace }}/_site \
-        ${{ secrets.HB4_USER }}@${{ secrets.HB4_HOST }}:/root/t/
+        ${{ secrets.HB4_USER }}@${{ secrets.HB4_HOST }}:/tmp
+    
+        
+    - name: deploy
+      run: |
+        ssh -t ${{ secrets.HB4_USER }}@${{ secrets.HB4_HOST }} "\
+        cd /tmp && echo 'Unzipping ...' && \
+        tar -zxf _site.tgz && echo 'Moving ...' &&\
+        mv _site /var/www/atutongxue.com && echo 'Chowning ...' && \
+        chown root:root /var/www/atutongxue.com && echo 'Deploy ok!'  \
+        "
+
+
         
     - name: done
       run: |
-        echo 'Done!'
+        echo 'All done!'
       
