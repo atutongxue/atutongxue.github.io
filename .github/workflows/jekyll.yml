@@ -52,7 +52,7 @@ jobs:
         rm -rf _site && echo 'Unzipping ...' && \
         tar -zxf _site.tgz && echo 'Deploying ...' &&\
         rsync -ah --stats --delete  _site/ /var/www/atutongxue.com && echo 'Chowning ...' && \
-        chown root:root /var/www/atutongxue.com && echo 'Deploy ok!'  \
+        chown -R root:root /var/www/atutongxue.com && echo 'Deploy ok!'  \
         "
 
 
