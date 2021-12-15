@@ -1,5 +1,7 @@
 # [atutongxue.github.io](https://github.com/atutongxue/atutongxue.github.io)
-[atutongxue.com](https://atutongxue.com) 源码 
+![https://github.com/atutongxue/atutongxue.github.io/actions/workflows/jekyll.yml](https://github.com/atutongxue/atutongxue.github.io/actions/workflows/jekyll.yml/badge.svg)
+
+[atutongxue.com](https://atutongxue.com) source code
 
 
 
