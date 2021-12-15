@@ -32,7 +32,7 @@ jobs:
         
     - name: rsync
       run: |
-        !rsync -ah --info=progress2 \
+        rsync -ah --info=progress2 \
         ${{ github.workspace }}/_site \
         ${{ secrets.HB4_USER }}@${{ secrets.HB4_HOST }}:/root/t/
         
