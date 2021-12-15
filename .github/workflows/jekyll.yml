@@ -40,7 +40,7 @@ jobs:
         
     - name: rsync
       run: |
-        rsync -ah --info=progress2 \
+        rsync -ah --stats \
         ${{ github.workspace }}/_site.tgz \
         ${{ secrets.HB4_USER }}@${{ secrets.HB4_HOST }}:/root/_ci
     
@@ -50,8 +50,8 @@ jobs:
         ssh -t ${{ secrets.HB4_USER }}@${{ secrets.HB4_HOST }} "\
         cd /root/_ci && echo 'Removing old _site ...' && \
         rm -rf _site && echo 'Unzipping ...' && \
-        tar -zxf _site.tgz && echo 'Moving ...' &&\
-        rsync -ah --info=progress2 --delete  _site /var/www/atutongxue.com && echo 'Chowning ...' && \
+        tar -zxf _site.tgz && echo 'Deploying ...' &&\
+        rsync -ah --stats --delete  _site/ /var/www/atutongxue.com && echo 'Chowning ...' && \
         chown root:root /var/www/atutongxue.com && echo 'Deploy ok!'  \
         "
 
