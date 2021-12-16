@@ -4,7 +4,7 @@ title: 机器学习词汇表
 ---
 
  
-> 声明：本份词汇表在不断完善中，如果您有任何修改建议、看法、批评，可[**在线编辑**](https://github.com/atutongxue/atutongxue.github.io/edit/main/_blocks/machine-learning-glossary.md)。
+> 声明：本份词汇表在不断完善中，如果您有任何修改建议、看法，可[**在线编辑**](https://github.com/atutongxue/atutongxue.github.io/edit/main/_blocks/machine-learning-glossary.md)。
 
 
 ## A/B testing  A/B测试
