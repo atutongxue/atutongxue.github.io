@@ -112,13 +112,14 @@ layout: post
 -----------------------
 公众号 · B站 · 知乎 · 微博  @阿图同学
 
-点击关注下方账号，一起体验新奇世界~
+扫码关注下方账号，一起体验新奇世界~
 
+<img src="/assets/img/atutongxue_gongzhonghao_qrcode.png" alt="阿图同学-公众号-二维码" style="zoom: 50%;" />
 
 -----------------------
 
 1.腾讯云搞活动，2核2G服务器一年40块：
-![image](https://user-images.githubusercontent.com/76881401/158864542-d4f4e1d1-d483-438f-aed4-3e7eb4245473.png)
+[![image](https://user-images.githubusercontent.com/76881401/158864542-d4f4e1d1-d483-438f-aed4-3e7eb4245473.png)](https://cloud.tencent.com/act/cps/redirect?redirect=1577&cps_key=91dc20a507492bd2804089f43be0e2d4&from=console)
 
 
 
